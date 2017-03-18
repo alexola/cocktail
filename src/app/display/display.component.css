@@ -1,0 +1,43 @@
+
+h1{
+font-family: 'Cormorant SC', serif;
+color: white;
+position: absolute;
+top: 38px;
+left: 37px;
+font-size: 50px;
+}
+#image{
+  background-image: url(http://www.hotelmajestic.com/res/hotelmajestic.com/fotogalleries/03-4-hmr-majesticbar-gallery/r-cocktail-bar-fronte.jpg);
+      height: 525px;
+      width: 1200px;
+      margin-left: 8px;
+}
+h2{
+  position: absolute;
+  font-family: 'Fjalla One', sans-serif;
+  right: 184px;
+  font-size: 40px;
+  width: 433px;
+  bottom: 244px;
+  background: black;
+  text-align: center;
+  color: whitesmoke;
+  border-radius: 5px;
+  border: white solid 2px;
+  padding: 1px;
+}
+h3{
+    position: absolute;
+    bottom: 430px;
+    color: whitesmoke;
+    right: 439px;
+    font-family: 'Fjalla One', sans-serif;
+    font-size: 31px;
+    background: black;
+    text-align: center;
+    width: 439px;
+    border-radius: 5px;
+    border: white solid 2px;
+    padding: 1px;
+}

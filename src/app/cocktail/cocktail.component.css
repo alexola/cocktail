@@ -1,0 +1,56 @@
+body{padding: 5px;}
+#cocktails{width: 550px; border: 1px solid #ccc;}
+#cocktails tr{height: 30px;}
+#cocktails tr ,td {text-align: center; font-family: 'Trocchi', serif;  }
+
+.show{
+  list-style: none;
+  margin: 0px 180px 0 180px;
+  font-family: 'Ovo', serif;
+  font-size: 20px;
+}
+
+#disname{
+  font-size: 22px;
+  font-family: 'Special Elite', cursive;
+  padding: 20px 20px 0px 10px;
+  top: 34px;
+  border-top: #096fa0 solid;
+}
+#disprep{
+  font-family: 'Raleway', sans-serif;
+  position: relative;
+  margin: 30px 10px 10px 150px;
+  width: 363px;
+  top: 262px;
+  left: 400px;
+  font-family: 'David Libre', serif;
+}
+#dising{
+
+  padding: 1px 10px 1px 10px;
+  width: 10px;
+  height: 20px;
+  font-family: 'Raleway', sans-serif;
+  list-style: none;
+}
+
+#disimage {
+  border-radius: 5px;
+  width:450px;
+  margin-left: 30px;
+}
+#hey{
+  position:absolute;
+  right:95px;
+  border-right: #2590FA solid 2px;
+  padding-right: 5px;
+}
+#ingredients{
+  list-style: none;
+  list-style: none;
+  position: absolute;
+  text-align: center;
+  right: 100px;
+  width: 300px;
+}

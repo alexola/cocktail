@@ -1,0 +1,42 @@
+<link href="https://fonts.googleapis.com/css?family=Trocchi" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=David+Libre" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Ovo" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Special+Elite" rel="stylesheet">
+<link rel="icon" href="http://www.iconarchive.com/download/i95772/iconsmind/outline/Cocktail.ico">
+<table id="cocktails" align="center">
+  <tr>
+    <th><input name="po" value="sour" type="checkbox"(click)='$event.target.checked? addFilters($event) : removeFilters($event)'> Sour</th>
+    <th><input name="po" value="sweet" type="checkbox"(click)='$event.target.checked? addFilters($event) : removeFilters($event)'> Sweet</th>
+  </tr>
+  <tr>
+    <th><input name="pi" value="bitter" type="checkbox"(click)="$event.target.checked? addFilters($event) : removeFilters($event)"> Bitter</th>
+    <th><input name="pi" value="acid" type="checkbox"(click)="$event.target.checked? addFilters($event) : removeFilters($event)"> Acid</th>
+  </tr>
+
+</table>
+
+
+<ul>
+  <li class="show" *ngFor="let cocktail of cocktails | filter:customFilters" align="center" id={{cocktail.id}}>
+    {{cocktail.name}}
+  </li>
+</ul>
+
+<table id="cocktails" align="center">
+
+</table>
+
+  <div *ngFor="let cocktail of cocktails | filter:customFilters" id={{cocktail.id}}>
+    <p id='disname' >{{cocktail.name}}
+    <button class ="btn btn-danger" (click)="cocktail.id=true"(dblclick)="cocktail.id=false" >Details</button></p>
+     <p id='disprep' [hidden]="!cocktail.id"(dblclick)="cocktail.id=false">
+      {{cocktail.preparation}}
+    </p>
+    <ul id='ingredients'>
+      <li *ngFor="let ingredient of cocktail.ingredients"   id='dising'     [hidden]="!cocktail.id"(dblclick)="cocktail.id=false">
+        <p id="hey">{{ingredient}}</p>
+      </li>
+    </ul>
+    <p  [hidden]="!cocktail.id"(dblclick)="cocktail.id=false"> <img id='disimage' [src]= 'cocktail.image'/>
+    </p>
+  </div>

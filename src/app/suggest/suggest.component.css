@@ -1,0 +1,34 @@
+.sebm-google-map-container {
+  height: 350px;
+
+}
+#paradis{
+  width: 220px;
+  height: auto;
+  padding-top: 40px;
+  padding-left:20px;
+}
+
+#dry{
+  height: 220px;
+
+}
+#boadas{
+  height: 220px;
+
+}
+img:hover {
+  -webkit-filter: grayscale(0);
+}
+/*B&W*/
+img {
+  -webkit-transition: all 1s ease;
+     -moz-transition: all 1s ease;
+       -o-transition: all 1s ease;
+      -ms-transition: all 1s ease;
+          transition: all 1s ease;
+          -webkit-filter: grayscale(100%);
+      filter: grayscale(100%);
+      -webkit-transition: .3s ease-in-out;
+      transition: .3s ease-in-out;
+}

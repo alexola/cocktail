@@ -1,0 +1,49 @@
+
+<h1>
+Want to go for a drink ?
+</h1>
+
+
+<!-- this creates a google map on the page with the given lat/lng from -->
+<!-- the component as the initial center of the map: -->
+
+<sebm-google-map
+  [latitude]="lat"
+  [longitude]="lng"
+  [zoom] ="zoom"
+  [disableDefaultUI]= false
+  [zoomControl] = false
+  (mapClick) = "mapClicked($event)"
+  [scrollwheel]="false"
+  >
+  <sebm-google-map-marker
+    *ngFor = "let m of markers; let i = index"
+    (markerClick)= "clickedMarker(m,i)"
+    [latitude]="m.lat"
+    [longitude]="m.lng"
+    [markerDraggable]= "m.draggable"
+    (dragEnd)="markerDragEnd(m,$event)"
+    >
+    <sebm-google-map-info-window>
+      <strong>{{m.name}}</strong>
+    </sebm-google-map-info-window>
+  </sebm-google-map-marker>
+</sebm-google-map>
+
+<section>
+
+    <a href="https://www.instagram.com/explore/locations/253005261724599/">
+      <img id='paradis' src="http://www.barbusiness.info/fotosnoticias/b_1455093171.jpg">
+    </a>
+<a href="https://www.instagram.com/drymartinijdlm/">
+  <img id='dry' src="https://ob9a8415roh4djoj110c31a1-wpengine.netdna-ssl.com/wp-content/uploads/2013/07/full-bar-cocktails.jpg">
+</a>
+
+<a href="https://www.imgrum.org/place/boadas-cocktails/237480419">
+  <img id='boadas' src="http://onemorecherry.com/wp-content/uploads/2015/07/drymartinibarcelonaguide.jpg">
+</a>
+
+<a href="https://www.instagram.com/slowbarcelona/">
+  <img id='boadas' src="https://www.slowbarcelona.es/wp-content/uploads/2015/12/08-cocktail-Dharma-Siam-Slow-Barcelona-base_web-350x255.jpg?x61836">
+</a>
+</section>

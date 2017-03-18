@@ -1,0 +1,22 @@
+<html>
+
+<head>
+  <link href="https://fonts.googleapis.com/css?family=Cormorant+SC:600" rel="stylesheet">
+</head>
+<body>
+
+
+<ul>
+
+<li><a [routerLink]="['display']" >Home</a></li>
+  <li><a [routerLink]="['home']" class="active" >Cocktails</a></li>
+  <li><a [routerLink]="['suggest']" >Suggestions</a></li>
+  <li><a [routerLink]="['about']" >About</a></li>
+  <li><img id="logo" src="./assets/public/images/logo.jpg" alt=""></li>
+  <li><div id="tag">Blank Cocktail</div></li>
+
+</ul>
+  <router-outlet></router-outlet>
+<h1>{{title}}</h1>
+</body>
+</html>
