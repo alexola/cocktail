@@ -17,7 +17,7 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { MyAboutComponent } from './my-about/my-about.component';
 import { SuggestComponent } from './suggest/suggest.component'
 const routes: Routes = [
-  { path: '', redirectTo: 'home', pathMatch: 'full' },
+  { path: '', redirectTo: 'display', pathMatch: 'full' },
   { path: 'home',  component: CocktailComponent },
   { path: 'display', component: DisplayComponent },
   { path: 'about', component: MyAboutComponent },
