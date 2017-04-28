@@ -48,9 +48,13 @@ body{padding: 5px;}
 }
 #ingredients{
   list-style: none;
-  list-style: none;
   position: absolute;
   text-align: center;
   right: 100px;
   width: 300px;
+  display:block;
+}
+div{
+  background: black;
+  color: white;
 }
