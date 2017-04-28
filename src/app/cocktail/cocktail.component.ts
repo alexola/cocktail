@@ -115,15 +115,15 @@ export class CocktailComponent implements OnInit {
   this.filterActive = true
   this.customFilters.push(event.target.value)
   this.filters = this.customFilters
-  console.log("added " + this.filters)
-  console.log(this.cocktails);
+  // console.log("added " + this.filters)
+  // console.log(this.cocktails);
 
 
 }
 
 showDetails(event, preparation){
   this.filters=this.customFilters
-  console.log("hey im alive", preparation)
+  // console.log("hey im alive", preparation)
 };
 
 removeFilters(event){
@@ -132,7 +132,7 @@ removeFilters(event){
   this.customFilters.splice(index, 1)
   if(this.customFilters.length == 0){
   this.filters = this.initialFilters}
-  console.log("erase"+ this.filters)
+    // console.log("erase"+ this.filters)
 
 }
 
